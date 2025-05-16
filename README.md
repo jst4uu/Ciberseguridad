@@ -16,3 +16,12 @@ Any suggestions, comments, or resources are always welcome!
 - Network scanning with Nmap
 - Packet analysis with Wireshark
 - General cybersecurity fundamentals
+
+## 🎯 Goals
+
+- Get an international job in cybersecurity
+- Complete beginner-level Hack The Box and TryHackMe machines
+- Understand the basics of Linux and Windows from a security perspective
+- Practice real-world scenarios through CTFs and labs
+- Improve my English and technical documentation skills
+- Prepare for future certifications like CompTIA Security+ or OSCP
