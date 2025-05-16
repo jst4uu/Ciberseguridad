@@ -45,3 +45,80 @@ The prompt can be customized using special characters and variables in the shell
 |\@	              |Current time                       | 
 |\u	              |Current username                   |
 |\w               |Full path of the current working directory|
+
+Customizing the prompt can be useful to make better your experience!!
+
+## Getting help
+
+Sometimes, we will find some parameters we dont know from memory or we never seen before
+
+But we can ask for help with the next command:
+
+`{name}htb[/htb]$ ls`
+
+It's a list of files and directories
+
+`{name}htb[/htb]$ man <tool>`
+
+Gives detailed information about tools
+
+Or we can use
+
+`{name}htb[/htb]$ <tool> --help`
+
+`{name}htb[/htb]$ ls --help`
+
+some tools or commands like __curl__ gives short version of help using **-h**
+
+`{name}htb[/htb]$ <tool> -h`
+
+**Apropos** This tool searches descriptions for instances of a keyword
+
+`jst4uu@htb[/htb]$ apropos sudo`
+
+# System Information
+
+Useful commands about system:
+
+| Command   | Description                                                                                  |
+|-----------|----------------------------------------------------------------------------------------------|
+| `whoami`  | Displays current username.                                                                   |
+| `id`      | Returns user's identity.                                                                     |
+| `hostname`| Sets or prints the name of the current host system.                                          |
+| `uname`   | Prints basic information about the operating system name and system hardware.                |
+| `pwd`     | Returns working directory name.                                                              |
+| `ifconfig`| Used to assign or view an address to a network interface and/or configure interface parameters. |
+| `ip`      | Utility to show or manipulate routing, network devices, interfaces and tunnels.              |
+| `netstat` | Shows network status.                                                                         |
+| `ss`      | Another utility to investigate sockets.                                                       |
+| `ps`      | Shows process status.                                                                         |
+| `who`     | Displays who is logged in.                                                                    |
+| `env`     | Prints environment or sets and executes command.                                              |
+| `lsblk`   | Lists block devices.                                                                          |
+| `lsusb`   | Lists USB devices.                                                                            |
+| `lsof`    | Lists opened files.                                                                           |
+| `lspci`   | Lists PCI devices.                                                                            |
+
+# SSH
+
+It's an protocol that allows remote access to linux hosts and servers, it doesn't requires a GUI
+
+To connect to our target we use:
+
+`{name}htb[/htb]$ ssh htb-student@[IP-address]`
+
+## Hostname
+
+Shows the name of the computer we are logged in
+
+## Whoami
+
+This quick and easy command can be used on both Windows and Linux systems to get our current username. During a security assessment, we obtain reverse shell access on a host, and one of the first bits of situational awareness we should do is figuring out what user we are running as. From there, we can figure out if the user has any special privileges/access. **id** expands the whoami command.
+
+## uname
+
+If we type **man uname** it will bring us the page with the possible options we can run the command.
+
+But if we type `uname -a` will print information in a specific order like, hostname, linux kernel, version etc, the flag **-a** will omit **-p** (processor type) and **-i** (hardware platform) if they are unknow.
+
+With **-r** we will see kernel release, with this info we can search exploits about the kernel
